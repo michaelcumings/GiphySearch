@@ -27,7 +27,7 @@ function renderButtons() {
     // Looping through the array
     for (var i = 0; i < topics.length; i++) {
 
-        // Then dynamicaly generating buttons for each movie in the array.
+        // Then dynamicaly generating buttons for each actor in the array.
         // This code $("<button>") is all jQuery needs to create the start and end tag. (<button></button>)
         var a = $("<button>");
         // Adding a class
@@ -47,7 +47,7 @@ renderButtons();
         // In this case, the "this" keyword refers to the button that was clicked
         var person = $(this).attr("data-name");
   
-        // Constructing a URL to search Giphy for the name of the person who said the quote
+        // Constructing a URL to search Giphy for the name of the actor indicated
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
           person + "&api_key=ff94anC1VD2oEwya48M1Ph6Yd6PqpWXq&limit=10";
   
@@ -125,7 +125,7 @@ renderButtons();
         // The Actor from the textbox is then added to our array
         topics.push(newactor);
 
-        // calling renderButtons which handles the processing of our movie array
+        // calling renderButtons which handles the processing of our topics array
         renderButtons();
       });
 
