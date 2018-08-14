@@ -10,7 +10,7 @@ This web app starts with a number of buttons at the top each bearing the name of
 This app uses the API fom Giphy: https://giphy.com/
 
 Links
-The game can be reached at 
+The app can be reached at 
 https://michaelcumings.github.io/GiphySearch/
 
 The repository can be found at
